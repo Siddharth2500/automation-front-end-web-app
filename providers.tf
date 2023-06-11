@@ -6,8 +6,8 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = "front-end-website-rg"
-    storage_account_name = "staticstoragesid2500"
+    resource_group_name  = "terraform_state_resource_Group"
+    storage_account_name = "terraformstate2500"
     container_name       = "tfstate"
     key                  = "terraform.tfstate"
   }
